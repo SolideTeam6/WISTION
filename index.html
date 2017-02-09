@@ -34,11 +34,28 @@
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/typed.js"></script>
     <script>
-              new WOW().init();
-    </script>
+        (function ($) {
+            $("#typed").typed({
+                strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+                //   stringsElement: $('#typed-strings'),
+                typeSpeed: 30,
+                backDelay: 500,
+                loop: false,
+                contentType: 'html', // or text
+                // defaults to false for infinite loop
+                loopCount: false
+            });
 
-    <!-- Javascript Files for current page only -->
+        })(jQuery);
+
+        //$(function () {
+
+        //});
+
+        new WOW().init();
+    </script>
     <script src="js/rev-setting-1.js"></script>
 </head>
 
@@ -85,7 +102,7 @@
         <div class="fullwidthbanner-container" style="height: 100vh !important; overflow: visible; top: 0; z-index: 0; position:fixed;">
             <div id="revolution-slider">
                 <ul>
-                    <li data-transition="fade"  data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg" class="tinted-image" >
+                    <li data-transition="fade" data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg" class="tinted-image">
                         <!--  BACKGROUND IMAGE -->
                         <!--<img src="images/bg2.jpg" alt="" />-->
                         <div class="tp-caption small-white lft"
@@ -97,10 +114,10 @@
                             <img src="images/wistion_logo/wistion-c-20x20.png" style="width: 50% !important; height: 50% !important;" id="image_first_layer" alt="" />
                         </div>
                     </li>
-                    <li data-transition="fadetobottomfadefromtop" class="active-revslide" data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg" >
+                    <li data-transition="fadetobottomfadefromtop" class="active-revslide" data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg">
                         <!--style="background: linear-gradient(rgba(0, 41, 53, 0.85),  rgba(250, 250, 250, 0.15)), url(/images/bg4.jpg);"-->
                         <!--  BACKGROUND IMAGE -->
-                        <img src="images/bg4.jpg" alt=""/>
+                        <img src="images/bg4.jpg" alt="" />
                         <div id="service1" class="tp-caption big-white sfb" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
                              data-x="0"
                              data-y="180"
@@ -165,7 +182,7 @@
                              data-speed="1000"
                              data-start="2200"
                              data-easing="easeOutExpo">
-                             los mejores &nbsp; <i class="fa fa-thumbs-up"></i>
+                            los mejores &nbsp; <i class="fa fa-thumbs-up"></i>
                         </div>
                         <div class="tp-caption small-white lfr"
                              data-x="right"
@@ -183,6 +200,25 @@
         <!-- content begin -->
         <div id="content" class="no-bottom" style="position: relative; z-index: 10; background: white; margin-top: 100vh !important; padding-top: 0;">
             <section data-speed="8" data-type="background" style="background-color: #002935;">
+                <div class="block-title text-center wow zoomIn">
+                    <!--<div id="typed_element" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"></div>-->
+                    <span id="typed" style="white-space:pre; letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935; font-size: 36px;"></span>
+                </div>
+                <script>
+                    (function ($) {
+                        $("#typed").typed({
+                            strings: ["Nuestros servicios"],
+                            //   stringsElement: $('#typed-strings'),
+                            typeSpeed: 30,
+                            backDelay: 500,
+                            loop: true,
+                            contentType: 'html', // or text
+                            // defaults to false for infinite loop
+                            loopCount: 2
+                        });
+
+                    })(jQuery);
+                </script>
                 <div class="row" style="margin-left: 10px; margin-right: 10px;">
                     <div class="feature-box-small-icon col-md-4 wow bounceInUp">
                         <div class="inner">
@@ -192,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feature-box-small-icon col-md-4">
+                    <div class="feature-box-small-icon col-md-4 wow bounceInDown">
                         <div class="inner">
                             <i class="fa fa-bars circle"></i>
                             <div class="text">
@@ -200,7 +236,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feature-box-small-icon col-md-4">
+                    <div class="feature-box-small-icon col-md-4 wow slideInRight">
                         <div class="inner">
                             <i class="fa fa-thumbs-up circle"></i>
                             <div class="text">
@@ -482,7 +518,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3"  id="div_footer_contact">
+                    <div class="col-md-3" id="div_footer_contact">
                         <h3>Ponte en contácto</h3>
                         <div class="widget widget-address">
                             <address>
