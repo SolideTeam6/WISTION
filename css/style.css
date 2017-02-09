@@ -2730,6 +2730,12 @@ a.accordion-toggle, a:visited.accordion-toggle {
         text-align: center !important;
     }
 
+    #header_nav{
+            z-index: 20;
+    position: fixed;
+    top: 0;
+    }
+
     .fullwidthbanner-container .btn {
         display: none;
     }
