@@ -27,6 +27,15 @@ body {
     url(/images/bg2.jpg);
 }
 
+/*#tinted-image_dos {
+  background: 
+    linear-gradient(
+      rgba(0, 41, 53, 0.85),
+      rgba(250, 250, 250, 0.15)
+    ),
+    url(/images/bg4.jpg);
+}*/
+
 .box {
   width:100px;
   height:100px;

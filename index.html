@@ -80,7 +80,7 @@
         <div class="fullwidthbanner-container" style="height: 100vh !important; overflow: visible; top: 0; z-index: 0; position:fixed;">
             <div id="revolution-slider">
                 <ul>
-                    <li data-transition="fade" data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg" class="tinted-image" >
+                    <li data-transition="fade"  data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg" class="tinted-image" >
                         <!--  BACKGROUND IMAGE -->
                         <!--<img src="images/bg2.jpg" alt="" />-->
                         <div class="tp-caption small-white lft"
@@ -92,9 +92,10 @@
                             <img src="images/wistion_logo/wistion-c-20x20.png" style="width: 50% !important; height: 50% !important;" id="image_first_layer" alt="" />
                         </div>
                     </li>
-                    <li data-transition="fade" data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg">
+                    <li data-transition="fadetobottomfadefromtop" class="active-revslide" data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg" >
+                        <!--style="background: linear-gradient(rgba(0, 41, 53, 0.85),  rgba(250, 250, 250, 0.15)), url(/images/bg4.jpg);"-->
                         <!--  BACKGROUND IMAGE -->
-                        <img src="images/bg4.jpg" alt="" />
+                        <img src="images/bg4.jpg" alt=""/>
                         <div id="service1" class="tp-caption big-white sfb" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
                              data-x="0"
                              data-y="180"
@@ -145,7 +146,7 @@
                                 Mandanos un mensaje
                             </a>
                         </div>
-                        <div class="tp-caption small-white lft" id="image_second_layer"
+                        <div class="tp-caption small-white lft" id="image_second_layer"style="display: none !important;"
                              data-x="480"
                              data-y="250"
                              data-speed="1000"
