@@ -89,13 +89,13 @@
                              data-speed="1000"
                              data-start="2000"
                              data-easing="easeOutExpo">
-                            <img src="images/wistion_logo/wistion-c-20x20.png" style="width: 50% !important; height: 50% !important;" alt="" />
+                            <img src="images/wistion_logo/wistion-c-20x20.png" style="width: 50% !important; height: 50% !important;" id="image_first_layer" alt="" />
                         </div>
                     </li>
                     <li data-transition="fade" data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg">
                         <!--  BACKGROUND IMAGE -->
                         <img src="images/bg4.jpg" alt="" />
-                        <div class="tp-caption big-white sfb" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
+                        <div id="service1" class="tp-caption big-white sfb" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
                              data-x="0"
                              data-y="180"
                              data-speed="300"
@@ -103,7 +103,7 @@
                              data-easing="easeOutExpo">
                             <i class="fa fa-check"></i>Cableado estructurado
                         </div>
-                        <div class="tp-caption big-white sfb" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
+                        <div id="service2" class="tp-caption big-white sfb" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
                              data-x="0"
                              data-y="260"
                              data-speed="300"
@@ -111,7 +111,7 @@
                              data-easing="easeOutExpo">
                             <i class="fa fa-check"></i>Internet
                         </div>
-                        <div class="tp-caption big-white sfl" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
+                        <div id="service3" class="tp-caption big-white sfl" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
                              data-x="0"
                              data-y="340"
                              data-speed="300"
@@ -119,7 +119,7 @@
                              data-easing="easeOutExpo">
                             <i class="fa fa-check"></i>CCTV
                         </div>
-                        <div class="tp-caption big-white sfl" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
+                        <div id="service4" class="tp-caption big-white sfl" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
                              data-x="0"
                              data-y="420"
                              data-speed="300"
@@ -127,7 +127,7 @@
                              data-easing="easeOutExpo">
                             <i class="fa fa-check"></i>Alarmas
                         </div>
-                        <div class="tp-caption big-white sfl" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
+                        <div id="service5" class="tp-caption big-white sfl" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"
                              data-x="0"
                              data-y="500"
                              data-speed="300"
@@ -135,7 +135,7 @@
                              data-easing="easeOutExpo">
                             <i class="fa fa-check"></i>Telefonía IP
                         </div>
-                        <div class="tp-caption small-white sfr"
+                        <div id="button_service1" class="tp-caption small-white sfr"
                              data-x="0"
                              data-y="580"
                              data-speed="300"
@@ -145,7 +145,7 @@
                                 Mandanos un mensaje
                             </a>
                         </div>
-                        <div class="tp-caption small-white lft"
+                        <div class="tp-caption small-white lft" id="image_second_layer"
                              data-x="480"
                              data-y="250"
                              data-speed="1000"
@@ -425,12 +425,12 @@
         <footer style="position: relative; z-index: 2;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="div_footer_logo">
                         <img src="images/wistion_logo/wistion-w-aside.png" style="width: 219px; height: 41px;" alt="logo"><br>
                         Soluciones tecnologicas
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="div_footer_servicios">
                         <div class="widget widget_recent_post">
                             <h3>Servicios</h3>
                             <ul>
@@ -444,7 +444,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="div_footer_tags">
                         <div class="widget widget_tags">
                             <h3>Tags</h3>
                             <ul>
@@ -460,7 +460,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3"  id="div_footer_contact">
                         <h3>Ponte en contácto</h3>
                         <div class="widget widget-address">
                             <address>
