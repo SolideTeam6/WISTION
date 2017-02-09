@@ -43,7 +43,7 @@ body {
   display: inline-block;
   vertical-align: top;
   margin-top: 10px;
-  background-image: url(http://lorempixel.com/output/food-q-c-100-100-10.jpg);
+  /*background-image: url(http://lorempixel.com/output/food-q-c-100-100-10.jpg);*/
   position: relative;
 }
 
