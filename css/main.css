@@ -1,10 +1,4 @@
-/* -------------------------------------------------- 
-Truehost CSS by Designesia
 
-Quick enable/disable css files.
-To enable css file simply remove mark '/*' and '* /' between line of css file
-
-/* -------------------------------------------------- */
 
 /* bootstrap framework */
 @import url("bootstrap.css");
