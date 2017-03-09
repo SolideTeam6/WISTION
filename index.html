@@ -82,17 +82,83 @@
                         <li>
                         </li>
                         <li>
-                            <a href="#">FEATURES</a>
+                            <a href="#servicios">SERVICIOS</a>
                         </li>
                         <li>
-                            <a href="#">PORTFOLIO</a>
+                            <a href="#valores">NOSOTROS</a>
                         </li>
                         <li>
-                            <a href="blog.html">BLOG</a>
+                            <a data-toggle="modal" data-target="#myModal">INTERNET</a>
                         </li>
-                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="#contacto">CONTACTO</a></li>
                         <!-- mainmenu close -->
 
+                    </div>
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="pricing-3-col">
+                                        <div class="pricing-box">
+                                            <ul>
+                                                <li class="title-row">
+                                                    <h4>Básico</h4>
+                                                </li>
+                                                <li class="price-row">
+                                                    <h1>$199</h1>
+                                                    <span>al mes</span>
+                                                </li>
+                                                <li><strong>2 MB</strong> Velocidad</li>
+                                                <li><strong>256 Mbps</strong> Subida</li>
+                                                <li><strong>Navega</strong> sin interrupciones</li>
+                                                <li class="deco"><strong>Mayor</strong> Conectividad</li>
+                                                <li class="btn-row"><a href="" class="btn btn-primary">Contrata</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pricing-box pricing-featured">
+                                            <ul>
+                                                <li class="title-row">
+                                                    <h4>Avanzado</h4>
+                                                </li>
+                                                <li class="price-row">
+                                                    <h1>$499</h1>
+                                                    <span>al mes</span>
+                                                </li>
+                                                <li><strong>5 MB</strong> Velocidad</li>
+                                                <li><strong>320 Mbps</strong> Subida</li>
+                                                <li><strong>Navega</strong> sin interrupciones</li>
+                                                <li class="deco"><strong>Mayor</strong> Conectividad</li>
+                                                <li class="btn-row"><a href="" class="btn btn-primary">Contrata</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pricing-box">
+                                            <ul>
+                                                <li class="title-row">
+                                                    <h4>Premium</h4>
+                                                </li>
+                                                <li class="price-row">
+                                                    <h1>$699</h1>
+                                                    <span>al mes</span>
+                                                </li>
+                                                <li><strong>10 MB</strong> Velocidad</li>
+                                                <li><strong>512 Mbps</strong> Subida</li>
+                                                <li><strong>Navega</strong> sin interrupciones</li>
+                                                <li class="deco"><strong>Super</strong> velocidad</li>
+                                                <li class="btn-row"><a href="" class="btn btn-primary">Contrata</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,7 +170,7 @@
                 <ul>
                     <li data-transition="fade" data-slotamount="10" data-masterspeed="300" data-thumb="images-slider/thumbs/thumb1.jpg" class="tinted-image">
                         <!--  BACKGROUND IMAGE -->
-                        <!--<img src="images/bg2.jpg" alt="" />-->
+                        <img src="images/bg2.jpg" alt="" />
                         <div class="tp-caption small-white lft"
                              data-x="center"
                              data-y="80"
@@ -164,11 +230,11 @@
                              data-speed="300"
                              data-start="1800"
                              data-easing="easeOutExpo">
-                            <a href="#" style="font-size: 20px; padding: 10px; letter-spacing: 2px; border-radius: 0;" class="btn btn-large btn-primary">
+                            <a href="#contacto" style="font-size: 20px; padding: 10px; letter-spacing: 2px; border-radius: 0;" class="btn btn-large btn-primary">
                                 Mandanos un mensaje
                             </a>
                         </div>
-                        <div class="tp-caption medium-white lft" id="image_second_layer" style="padding: 10px 10px 10px 10px; background-color: #000;"
+                        <div id="trabaja-con"  class="tp-caption medium-white lft" id="image_second_layer" style="padding: 10px 10px 10px 10px; background-color: #000;"
                              data-x="right"
                              data-y="250"
                              data-speed="1000"
@@ -176,7 +242,7 @@
                              data-easing="easeOutExpo">
                             <i class="fa fa-user"></i>Trabaja con
                         </div>
-                        <div class="tp-caption medium-white lft" id="image_second_layer" style="padding: 10px 10px 10px 10px; background-color: #000;"
+                        <div id="los-mejores" class="tp-caption medium-white lft" id="image_second_layer" style="padding: 10px 10px 10px 10px; background-color: #000;"
                              data-x="right"
                              data-y="320"
                              data-speed="1000"
@@ -184,13 +250,13 @@
                              data-easing="easeOutExpo">
                             los mejores &nbsp; <i class="fa fa-thumbs-up"></i>
                         </div>
-                        <div class="tp-caption small-white lfr"
+                        <div class="tp-caption small-white lfr" id="image-logo-second"
                              data-x="right"
                              data-y="330"
                              data-speed="1000"
                              data-start="2400"
                              data-easing="easeOutExpo">
-                            <img src="images/wistion_logo/wisiton-w-20x20.png" style="width: 50% !important; height: 50% !important;" alt="" />
+                            <img src="images/wistion_logo/wisiton-w-20x20.png" id="image-inside-second" style="width: 50% !important; height: 50% !important;" alt="" />
                         </div>
                     </li>
                 </ul>
@@ -199,7 +265,90 @@
         <!-- slider close -->
         <!-- content begin -->
         <div id="content" class="no-bottom" style="position: relative; z-index: 10; background: white; margin-top: 100vh !important; padding-top: 0;">
-            <section data-speed="8" data-type="background" style="background-color: #002935; padding-top: 60px;">
+            <section style="padding-top: 60px; padding-bottom: 60px;" id="valores">
+                <div class="row" style="margin-left: 30px; margin-right: 30px;">
+                    <div class="col-md-3 wow slideInRight">
+                        <div class="panel-group" id="accordion" style="text-align: center;">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" style="letter-spacing: 2px; color: #002935; text-shadow: 4px 4px 4px #afafaf;">Perfil</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            Wistion es una empresa 100% mexicana, donde su mayor cobertura se encuentra en el estado de Chihuahua.
+                                            Las combinaciones en diferentes tipos de servicios, nos permite servir al cliente y así el poder tener siempre de su confianza.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow slideInLeft">
+                        <div class="panel-group" id="accordion2" style="text-align: center;">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" style="letter-spacing: 2px; color: #002935; text-shadow: 4px 4px 4px #afafaf;">Misión</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            Aportar a la sociedad Soluciones en Tecnologías, que les facilite ser más eficientes en sus comunicaciones para mejores tiempos de respuesta, teniendo una mayor seguridad y satisfacción.
+                                            Facilitr al cliente la selección de productos y servicios, tanto para el entorno industrial, como residencial, que superen sus expectativas de atención, valor y calidad.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow slideInRight">
+                        <div class="panel-group" id="accordion3" style="text-align: center;">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" style="letter-spacing: 2px; color: #002935; text-shadow: 4px 4px 4px #afafaf;">Visión</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Ser la empresa líder en Soluciones en Tecnologías en el norte de país, enfocándonos en los servicios de Redes Inalámbricas, CCTV, Cableado Estructurado y Celdas Solares. Cumpliendo en tiempo, forma y calidad las necesidades del nuestros clientes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow slideInLeft">
+                        <div class="panel-group" id="accordion4" style="text-align: center;">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#collapseFour" style="letter-spacing: 2px; color: #002935; text-shadow: 4px 4px 4px #afafaf;">Valores</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            Puntualidad <br />
+                                            Calidad<br />
+                                            Comunicación<br />
+                                            Responsabilidad<br />
+                                            Trabajo en equipo<br />
+                                            Honestidad<br />
+                                            Compromiso<br />
+                                            Innovación
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-speed="8" data-type="background" style="background-color: #002935; padding-top: 60px;" id="servicios">
                 <div class="block-title text-center wow zoomIn">
                     <!--<div id="typed_element" style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;"></div>-->
                     <span id="typed" style="white-space:pre; letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935; font-size: 36px;"></span>
@@ -219,116 +368,175 @@
 
                     })(jQuery);
                 </script>
-                <div class="row" style="margin-left: 10px; margin-right: 10px;">
-                    <div class="feature-box-small-icon col-md-4 wow bounceInUp"  data-wow-duration="0.8s" data-wow-delay="0.2s">
-                        <div class="inner">
-                            <i class="fa fa-bars circle"></i>
+                <div class="row" style="height: 168px; width: 100%;">
+                    <div id="div-cable" class="feature-box-small-icon col-md-6 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s" style="margin-bottom: 0px !important;">
+                        <div class="inner" style="padding: 9px;">
+                            <i class="fa fa-bars circle" style="margin-left: 15px;" id="icon-cable"></i>
                             <div class="text">
                                 <h3 style="color: #afafaf;"><br />Cableado estructurado</h3>
+                                <p>
+                                    Contamos con una oferta de instalación y puesta a punto en cableado horizontal y vertical en categorías 5e, 6 y 6ª, así como en enlaces y conexiones de fibra óptica desde OM1 hasta OS2. Elaboramos su propuesta de proyecto en base su mejor costo-beneficio ya sea:
+                                    Por nodo doble o sencillo
+                                    Por distancia o área
+                                    Por proyecto o fases
+                                </p>
                             </div>
+
                         </div>
                     </div>
-                    <div class="feature-box-small-icon col-md-4 wow bounceInDown" data-wow-duration="0.8s" data-wow-delay="0.4s">
-                        <div class="inner">
-                            <i class="fa fa-rss circle"></i>
-                            <div class="text">
-                                <h3 style="color: #afafaf;"><br />Internet</h3>
-                            </div>
+                    <div class="feature-box-small-icon col-md-6 wow zoomIn" id="slide-cableado" data-wow-duration="1s" data-wow-delay="0.6s" style="background-color: white; height: 100%; margin-bottom: 0px !important ;">
+                        <!-- logo carousel -->
+                        <div class="flexslider logo-carousel no-control" style="margin-top: 63px;">
+                            <ul class="slides">
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s1.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s2.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s3.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s4.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s5.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s6.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s7.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="feature-box-small-icon col-md-4 wow slideInRight" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                </div>
+                <div class="row" style="height: 170px; width: 99.9%;">
+                    <div id="slide-redes" class="feature-box-small-icon col-md-6 wow zoomIn" data-wow-duration="1s" data-wow-delay="0.8s" style="background-color: white; height: 100%; margin-bottom: 0px;">
+                        <!-- logo carousel -->
+                        <div class="flexslider logo-carousel no-control" style="margin-top: 65px;">
+                            <ul class="slides">
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s8.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s9.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s10.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s11.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s12.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="redes-text" class="feature-box-small-icon col-md-6 wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.2s" style="padding: 9.2px; margin-bottom: 0px;">
                         <div class="inner">
-                            <i class="fa fa-tv circle"></i>
+                            <i class="fa fa-rss circle"  id="icon-redes" style="margin-left: 30px;"></i>
                             <div class="text">
-                                <h3 style="color: #afafaf;"><br />CCTV</h3>
+                                <h3 style="color: #afafaf;"><br />Redes inalámbricas</h3>
+                                <p>
+                                    Nuestra oferta en enlaces Punto a punto y multipunto, ofrece velocidades entre sus sitios o sucursales, realizando la mejor comunicación y control de sus sitios. A demás contamos con instalación y mantenimiento de Torres arriostradas y auto soportadas.
+                                    Realizamos distancias superiores a los 100 Km y nos ajustamos a sus necesidades de cobertura o comunicación. Podemos transmitir Voz, Datos y Video.
+
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row" style="height: 150px; width: 99.8%;">
+                    <div id="cctv-text" class="feature-box-small-icon col-md-6 wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s" style="margin-bottom: 0px !important; ">
+                        <div class="inner" style="padding: 9px;">
+                            <i class="fa fa-video-camera circle" id="icon-cctv" style="margin-left: 15px;"></i>
+                            <div class="text">
+                                <h3 style="color: #afafaf;"><br />CCTV</h3>
+                                <p>
+                                    Manejamos todas tus necesidades en Circuito Cerrado, desde Fijas varifocales, Tipo Domo, Tipo Bullet, etc. Y si tu necesidad es más grande también lo cubrimos con la tecnología que más se adecue a tu proyecto.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="slide-cctv" class="feature-box-small-icon col-md-6 wow zoomIn" data-wow-duration="1.3s" data-wow-delay="1.2s" style="background-color: white; height: 100%; margin-bottom: 0px !important ;">
+                        <!-- logo carousel -->
+                        <div class="flexslider logo-carousel no-control" style="margin-top: 53px;">
+                            <ul class="slides">
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s13.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s14.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/logo/s15.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="row" style="margin-left: 10px; margin-right: 10px; margin-top: 30px;">
-                    <div class="feature-box-small-icon col-md-4 wow slideInLeft" data-wow-duration="0.8s" data-wow-delay="0.8s">
+                    <div id="alarmas-text" class="feature-box-small-icon col-md-4 wow slideInLeft" data-wow-duration="0.8s" data-wow-delay="0.8s">
                         <div class="inner">
-                            <i class="fa fa-rocket circle"></i>
+                            <i class="fa fa-check circle" id="icon-alarmas"></i>
                             <div class="text">
                                 <h3 style="color: #afafaf;"><br />Alarmas</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="feature-box-small-icon col-md-4 wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="1s">
+                    <div id="telefonia-text"  class="feature-box-small-icon col-md-4 wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="1s">
                         <div class="inner">
-                            <i class="fa fa-bars circle"></i>
+                            <i class="fa fa-phone circle" id="icon-telefonia"></i>
                             <div class="text">
                                 <h3 style="color: #afafaf;"><br />Telefonía IP</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="feature-box-small-icon col-md-4 wow slideInRight" data-wow-duration="0.8s" data-wow-delay="1.2s">
+                    <div id="internet-text"  class="feature-box-small-icon col-md-4 wow slideInRight" data-wow-duration="0.8s" data-wow-delay="1.2s">
                         <div class="inner">
-                            <i class="fa fa-thumbs-up circle"></i>
+                            <i class="fa fa-rss circle" id="icon-internet"></i>
                             <div class="text">
-                                <h3 style="color: #afafaf;"><br />Fibra óptica</h3>
+                                <h3 style="color: #afafaf;"><br />Internet</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="container" style="padding-top: 50px;">
-                <div class="block-title text-center">
-                    <h1>Internet</h1>
-                    A continuación te mostramos los paquetes de internet disponibles
-                </div>
-                <div class="pricing-3-col">
-                    <div class="pricing-box">
-                        <ul>
-                            <li class="title-row">
-                                <h4>Básico</h4>
-                            </li>
-                            <li class="price-row">
-                                <h1>$199</h1>
-                                <span>al mes</span>
-                            </li>
-                            <li><strong>2 MB</strong> Velocidad</li>
-                            <li><strong>256 Mbps</strong> Subida</li>
-                            <li><strong>Navega</strong> sin interrupciones</li>
-                            <li class="deco"><strong>Mayor</strong> Conectividad</li>
-                            <li class="btn-row"><a href="" class="btn btn-primary">Contrata</a></li>
-                        </ul>
-                    </div>
-                    <div class="pricing-box pricing-featured">
-                        <ul>
-                            <li class="title-row">
-                                <h4>Avanzado</h4>
-                            </li>
-                            <li class="price-row">
-                                <h1>$499</h1>
-                                <span>al mes</span>
-                            </li>
-                            <li><strong>5 MB</strong> Velocidad</li>
-                            <li><strong>320 Mbps</strong> Subida</li>
-                            <li><strong>Navega</strong> sin interrupciones</li>
-                            <li class="deco"><strong>Mayor</strong> Conectividad</li>
-                            <li class="btn-row"><a href="" class="btn btn-primary">Contrata</a></li>
-                        </ul>
-                    </div>
-                    <div class="pricing-box">
-                        <ul>
-                            <li class="title-row">
-                                <h4>Premium</h4>
-                            </li>
-                            <li class="price-row">
-                                <h1>$699</h1>
-                                <span>al mes</span>
-                            </li>
-                            <li><strong>10 MB</strong> Velocidad</li>
-                            <li><strong>512 Mbps</strong> Subida</li>
-                            <li><strong>Navega</strong> sin interrupciones</li>
-                            <li class="deco"><strong>Super</strong> velocidad</li>
-                            <li class="btn-row"><a href="" class="btn btn-primary">Contrata</a></li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
             <section style="background-image: url(images/bg_syscom.jpg); background-size: cover; background-position: center center; padding-top: 50px;">
                 <div class="block-title text-center">
                     <h1 style="letter-spacing: 2px; color: white; text-shadow: 4px 4px 4px #002935;">Distribuidor autorizado</h1>
@@ -337,7 +545,7 @@
                     <img src="images/syscom.png" style="width: 50%;" />
                 </div>
             </section>
-            <section style="padding-top: 60px; padding-bottom: 60px;">
+            <section style="padding-top: 60px; padding-bottom: 60px;" id="contacto" >
                 <div class="block-title text-center">
                     <h1 style="letter-spacing: 2px; color: #002935; text-shadow: 4px 4px 4px #afafaf;">Mandanos un mensaje</h1>
                 </div>
@@ -358,9 +566,22 @@
                                     <!-- Phone -->
                                     <input type="text" name="phone" id="phone" class="form-control" placeholder="Teléfono" maxlength="100">
                                 </div>
-                                <div class="form-group col-md-12 col-xs-12">
+                                <div class="form-group col-md-6 col-xs-12">
                                     <!-- Subject -->
                                     <input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto" maxlength="100">
+                                </div>
+                                <div class="form-group col-md-6 col-xs-12">
+                                    <!-- Subject -->
+                                    <select id="select-servicio" class="form-control">
+                                        <option value="0"> -- Seleccionar Servicio -- </option>
+                                        <option value="1"> Cableado Estructurado </option>
+                                        <option value="2"> Redes inalámbricas </option>
+                                        <option value="3"> Cableado Estructurado </option>
+                                        <option value="4"> CCTV </option>
+                                        <option value="5"> Alarmas </option>
+                                        <option value="6"> Telefonía IP </option>
+                                        <option value="7"> Internet </option>
+                                    </select>
                                 </div>
                                 <!-- Comment -->
                                 <div class="form-group col-md-12 col-xs-12">
@@ -398,8 +619,7 @@
                 </div>
             </section>
 
-            <section>
-                <!-- logo carousel -->
+            <!--<section>
                 <div class="flexslider logo-carousel no-control">
                     <ul class="slides">
                         <li>
@@ -500,7 +720,7 @@
 
                     </ul>
                 </div>
-            </section>
+            </section>-->
 
 
         </div>
@@ -508,7 +728,7 @@
         <!-- footer begin -->
         <footer style="position: relative; z-index: 2;">
             <div class="container">
-                <div class="row">
+                <div class="row" id="row-foter">
                     <div class="col-md-3" id="div_footer_logo">
                         <img src="images/wistion_logo/wistion-w-aside.png" style="width: 219px; height: 41px;" alt="logo"><br>
                         Soluciones tecnologicas
@@ -567,11 +787,10 @@
                             <nav>
                                 <ul>
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">Features</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Servicios</a></li>
+                                    <li><a href="#">Nosotros</a></li>
+                                    <li><a href="#">Internet</a></li>
+                                    <li><a href="#">Contacto</a></li>
                                 </ul>
                             </nav>
                         </div>
