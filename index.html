@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css" id="main-css">
     <link rel="stylesheet" href="css/switcher.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/toastr.css" type="text/css">
     <link rel="stylesheet" href="#" id="colors">
     <link rel="stylesheet" href="#" id="boxed">
     <link rel="shortcut icon" href="images/wistion_logo/favicon.png">
@@ -35,6 +36,7 @@
     <script src="js/custom.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/typed.js"></script>
+    <script src="js/toastr.js"></script>
     <script>
         (function ($) {
             $("#typed").typed({
@@ -371,7 +373,7 @@
                 <div class="row" style="height: 168px; width: 100%;">
                     <div id="div-cable" class="feature-box-small-icon col-md-6 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s" style="margin-bottom: 0px !important;">
                         <div class="inner" style="padding: 9px;">
-                            <i class="fa fa-bars circle" style="margin-left: 15px;" id="icon-cable"></i>
+                            <i class="fa fa-bars circle" id="icon-cable"></i>
                             <div class="text">
                                 <h3 style="color: #afafaf;"><br />Cableado estructurado</h3>
                                 <p>
@@ -462,7 +464,7 @@
                     </div>
                     <div id="redes-text" class="feature-box-small-icon col-md-6 wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.2s" style="padding: 9.2px; margin-bottom: 0px;">
                         <div class="inner">
-                            <i class="fa fa-rss circle"  id="icon-redes" style="margin-left: 30px;"></i>
+                            <i class="fa fa-rss circle"  id="icon-redes" ></i>
                             <div class="text">
                                 <h3 style="color: #afafaf;"><br />Redes inalámbricas</h3>
                                 <p>
@@ -477,7 +479,7 @@
                 <div class="row" style="height: 150px; width: 99.8%;">
                     <div id="cctv-text" class="feature-box-small-icon col-md-6 wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s" style="margin-bottom: 0px !important; ">
                         <div class="inner" style="padding: 9px;">
-                            <i class="fa fa-video-camera circle" id="icon-cctv" style="margin-left: 15px;"></i>
+                            <i class="fa fa-video-camera circle" id="icon-cctv" ></i>
                             <div class="text">
                                 <h3 style="color: #afafaf;"><br />CCTV</h3>
                                 <p>
@@ -854,11 +856,127 @@
             <li class="p20"></li>
         </ul>
     </div>
-    <!--<script src="plugins/wow/wow.min.js"></script>
+    <!--<script src="plugins/wow/wow.min.js"></script>-->
     <script type="text/javascript">
 
-        //jQuery(document).ready(function () {
 
+        (function ($) {
+            $('#submit_CONTACTO').click(function () {
+
+                var servicio = $('#select-servicio option:selected').text();
+                var name = $('#name').val();
+                var message = $('textarea#message').val();
+                var email = $('#email').val();
+                var subject = $('#subject').val();
+                var phone = $('#phone').val();
+
+                if (!name || !message || !email || !subject || !phone || servicio == " -- Seleccionar Servicio -- ")
+                    toastr.info('Existen campos vacios favor de llenarlos para continuar.');
+                else {
+                    $.ajax({
+                        type: "POST",
+                        url: "mensaje.php",
+                        data: { name: name, message: message, email: email, subject: subject, phone: phone, servicio: servicio },
+                        success: function (data) {
+                            toastr.success('Mensaje enviado con éxito, en un momento te antederemos.');
+                        }
+                    });
+                }
+
+            });
+
+
+
+            $('#phone').keypress(function (key) {
+                if ((event.keyCode < 48 || event.keyCode > 57))
+                    return false;
+            });
+
+            $("#name").keypress(function (key) {
+                if ((key.charCode < 97 || key.charCode > 122)//letras mayusculas
+                    && (key.charCode < 65 || key.charCode > 90) //letras minusculas
+                    && (key.charCode != 241) //ñ
+                     && (key.charCode != 209) //Ñ
+                     && (key.charCode != 32) //espacio
+                     && (key.charCode != 225) //á
+                     && (key.charCode != 233) //é
+                     && (key.charCode != 237) //í
+                     && (key.charCode != 243) //ó
+                     && (key.charCode != 250) //ú
+                     && (key.charCode != 193) //Á
+                     && (key.charCode != 201) //É
+                     && (key.charCode != 205) //Í
+                     && (key.charCode != 211) //Ó
+                     && (key.charCode != 218) //Ú
+                    //&& (key.charCode != 45) //-
+
+                    )
+                    return false;
+            });
+
+            $("#subject").keypress(function (key) {
+                if ((key.charCode < 97 || key.charCode > 122)//letras mayusculas
+                    && (key.charCode < 65 || key.charCode > 90) //letras minusculas
+                    && (key.charCode != 241) //ñ
+                     && (key.charCode != 209) //Ñ
+                     && (key.charCode != 32) //espacio
+                     && (key.charCode != 225) //á
+                     && (key.charCode != 233) //é
+                     && (key.charCode != 237) //í
+                     && (key.charCode != 243) //ó
+                     && (key.charCode != 250) //ú
+                     && (key.charCode != 193) //Á
+                     && (key.charCode != 201) //É
+                     && (key.charCode != 205) //Í
+                     && (key.charCode != 211) //Ó
+                     && (key.charCode != 218) //Ú
+                    //&& (key.charCode != 45) //-
+
+                    )
+                    return false;
+            });
+
+            $("#email").keypress(function (key) {
+                if ((key.charCode < 97 || key.charCode > 122)//letras mayusculas
+                    && (key.charCode < 65 || key.charCode > 90) //letras minusculas
+                    && (event.keyCode < 48 || event.keyCode > 57)
+                    && (key.charCode != 95) //_
+                     && (key.charCode != 46) //.
+                    && (key.charCode != 45) //-
+                    && (key.charCode != 64) //@
+
+                    )
+                    return false;
+            });
+
+
+        })(jQuery);
+
+        //window.onload = function () {
+
+        //    $('#submit_CONTACTO').click(function () {
+
+        //        var servicio = $('#select-servicio option:selected').text();
+        //        var name = $('#name').val();
+        //        var message = $('textarea#message').val();
+        //        var email = $('#email').val();
+        //        var subject = $('#subject').val();
+        //        var phone = $('#phone').val();
+
+        //        if (!name || !message || !email || !subject || !phone || servicio == " -- Seleccionar Servicio -- ")
+        //            toastr.info('Existen campos vacios favor de llenarlos para continuar.');
+        //        else {
+        //            $.ajax({
+        //                type: "POST",
+        //                url: "mensaje.php",
+        //                data: { name: name, message: message, email: email, subject: subject, phone: phone, servicio: servicio },
+        //                success: function (data) {
+        //                    toastr.success('Mensaje enviado con éxito, en un momento te antederemos.');
+        //                }
+        //            });
+        //        }
+
+        //    });
 
         //    wow = new WOW(
         //             {
@@ -872,8 +990,13 @@
 
 
         //    wow.init();
+
+        //}
+
+        //jQuery(document).ready(function () {
+           
         //});
 
-    </script>-->
+    </script>
 </body>
 </html>

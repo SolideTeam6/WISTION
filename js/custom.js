@@ -231,22 +231,22 @@ jQuery(document).ready(function() {
 	
 	// responsive slides
 	
-  jQuery(function () {
-      // Slideshow 4
-      jQuery(".pic_slider").responsiveSlides({
-        auto: false,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "callbacks",
-        before: function () {
-          jQuery('.events').append("<li>before event fired.</li>");
-        },
-        after: function () {
-          jQuery('.events').append("<li>after event fired.</li>");
-        }
-      });
-    });
+  //jQuery(function () {
+  //    // Slideshow 4
+  //    jQuery(".pic_slider").responsiveSlides({
+  //      auto: false,
+  //      pager: false,
+  //      nav: true,
+  //      speed: 500,
+  //      namespace: "callbacks",
+  //      before: function () {
+  //        jQuery('.events').append("<li>before event fired.</li>");
+  //      },
+  //      after: function () {
+  //        jQuery('.events').append("<li>after event fired.</li>");
+  //      }
+  //    });
+  //  });
 	
 	// --------------------------------------------------
 	// tabs
